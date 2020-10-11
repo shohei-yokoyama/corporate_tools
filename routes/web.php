@@ -18,6 +18,7 @@ use App\Http\Controllers\TermController;
 //     return view('welcome');
 // });
 
+Route::get("/",[TermController::class,"index"]);
 Route::get("/index",[TermController::class,"index"]);
 Route::get("/officer_term",[TermController::class,"term_select"]);
 Route::get("/term_check",[TermController::class,"term_check"]);
